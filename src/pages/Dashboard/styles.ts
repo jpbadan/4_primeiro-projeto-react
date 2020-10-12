@@ -43,7 +43,7 @@ export const Form = styled.form`
     /* Equivale a -> button:hover {} */
     &:hover {
       background: ${shade(0.2, '#04d361')};
-      transform: scale(1.05);
+      transform: scale(1.01);
     }
   }
 `;
