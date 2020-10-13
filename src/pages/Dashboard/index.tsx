@@ -57,15 +57,15 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <img src={logo} alt="Github explorer" />
-      <Title>Explore repositórios no github</Title>
+      <Title>Keep up with GitHub repositories</Title>
       <Form onSubmit={handleAddRepository}>
         {/* Mudança de valor do input => mudança de estado no react */}
         <input
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
-          placeholder="Digite o nome do repositório"
+          placeholder="Which repo do you wanna keep up with?"
         />
-        <button type="submit">Pesquisar</button>
+        <button type="submit">Search</button>
       </Form>
       <Repositories>
         {repositories.map(repository => (
